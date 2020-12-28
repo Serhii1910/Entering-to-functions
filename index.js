@@ -3,7 +3,8 @@
 // isAdult();
 //checkMultiplicity();
 //triangleChecking ();
-rombSquare();
+//rombSquare();
+cylinderSquare();
 
 function isAdult() {
 	const age = +prompt('Are you adult? Enter age');
@@ -57,4 +58,12 @@ function rombSquare() {
 			alert('Romb square is ' +rombSquare+ ' square units');
 		}
 	}
+}
+
+function cylinderSquare() {
+	const height = +prompt('Enter height');
+	const radius = +prompt('Enter radius');
+
+	const square = 2 * 3.14 * radius * (height + radius);
+	alert('Площадь цилиндра навна ' +square+ ' квадратных едениц');
 }
