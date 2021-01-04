@@ -6,9 +6,9 @@
 //rombSquare();
 cylinderSquare();
 
-function isAdult() {
-	const age = +prompt('Are you adult? Enter age');
+const age = +prompt('Are you adult? Enter age');
 
+function isAdult() {
 	if (age >= 5) {
 		alert('You are adult');
 	} else {
@@ -16,10 +16,10 @@ function isAdult() {
 	}
 }
 
-function checkMultiplicity() {
-	const number1 = +prompt('Enter number 15 or 25');
-	const number2 = +prompt('Enter one number 3, 4 or 5');
+const number1 = +prompt('Enter number 15 or 25');
+const number2 = +prompt('Enter one number 3, 4 or 5');
 
+function checkMultiplicity() {
 	const modulo = number1 / number2;
 	if (modulo === 0) {
 		alert('Divisible without residue');
@@ -28,11 +28,11 @@ function checkMultiplicity() {
 	}
 }
 
-function triangleChecking() {
-	const side1 = +prompt('Enter lenght of first side');
-	const side2 = +prompt('Enter lenght of second side');
-	const side3 = +prompt('Enter lenght of third side');
+const side1 = +prompt('Enter lenght of first side');
+const side2 = +prompt('Enter lenght of second side');
+const side3 = +prompt('Enter lenght of third side');
 
+function triangleChecking() {
 	if(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
 		alert("Triangle may exist");
 	}	else {
@@ -40,12 +40,12 @@ function triangleChecking() {
 	}
 }
 
-function rombSquare() {
-	const rombLenght = +prompt('Enter lenght (if unknown skip)');
-	const rombHeight = +prompt('Enter height (if unknown skip)');
-	const rombDiagonal1 = +prompt('Enter diagonal1 (if unknown skip)');
-	const rombDiagonal2 = +prompt('Enter diagonal2 (if unknown skip)');
+const rombLenght = +prompt('Enter lenght (if unknown skip)');
+const rombHeight = +prompt('Enter height (if unknown skip)');
+const rombDiagonal1 = +prompt('Enter diagonal1 (if unknown skip)');
+const rombDiagonal2 = +prompt('Enter diagonal2 (if unknown skip)');
 
+function rombSquare() {
 	if(rombLenght === 0 || rombLenght === isNaN || rombHeight === 0 || rombHeight === isNaN) {
 		if(rombDiagonal1 > 0 && rombDiagonal2 > 0) {
 			const rombSquare = (rombDiagonal1 * rombDiagonal2) / 2;
@@ -60,10 +60,10 @@ function rombSquare() {
 	}
 }
 
-function cylinderSquare() {
-	const height = +prompt('Enter height');
-	const radius = +prompt('Enter radius');
+const height = +prompt('Enter height');
+const radius = +prompt('Enter radius');
 
+function cylinderSquare() {
 	const square = 2 * 3.14 * radius * (height + radius);
 	alert('Площадь цилиндра навна ' +square+ ' квадратных едениц');
 }
